@@ -1,0 +1,63 @@
+.admin-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.controls input {
+  flex: 1;
+  min-width: 150px;
+}
+
+.controls button {
+  white-space: nowrap;
+}
+
+.summary-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+
+.summary-table th {
+  background: var(--primary);
+  color: white;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.summary-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.summary-table tbody tr:hover {
+  background: var(--bg);
+}
+
+@media (max-width: 640px) {
+  .summary-table {
+    font-size: 0.875rem;
+  }
+
+  .summary-table th,
+  .summary-table td {
+    padding: 0.5rem;
+  }
+
+  .controls {
+    flex-direction: column;
+  }
+
+  .controls input {
+    min-width: auto;
+  }
+}

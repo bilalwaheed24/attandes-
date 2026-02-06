@@ -1,0 +1,42 @@
+{
+  "name": "sams-backend",
+  "version": "1.0.0",
+  "description": "Smart Attendance Management System - Backend API",
+  "type": "module",
+  "main": "dist/app.js",
+  "scripts": {
+    "dev": "nodemon --exec node --experimental-modules src/app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "test": "vitest",
+    "lint": "eslint src/**/*.ts",
+    "migrate": "node dist/scripts/migrate.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "pg": "^8.11.3",
+    "dotenv": "^16.3.1",
+    "jsonwebtoken": "^9.1.2",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "joi": "^17.11.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "@types/express": "^4.17.21",
+    "@types/bcryptjs": "^2.4.6",
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.2",
+    "nodemon": "^3.0.2",
+    "eslint": "^8.56.0",
+    "@typescript-eslint/eslint-plugin": "^6.17.0",
+    "@typescript-eslint/parser": "^6.17.0",
+    "vitest": "^1.1.0",
+    "@types/vitest": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

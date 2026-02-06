@@ -1,0 +1,46 @@
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# Build
+dist/
+build/
+.next/
+out/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# Database
+*.sql
+postgres_data/
+
+# Docker
+.dockerignore
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Test coverage
+coverage/
+
+# Temp
+tmp/
+temp/
